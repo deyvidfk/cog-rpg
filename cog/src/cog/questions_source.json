@@ -1,0 +1,42 @@
+[
+   {
+      "id":0,
+      "text":"Qual das alternativas a variável está escrita corretamente?",
+      "narrative":"Lutten  e seus amigos estão jogando um jogo de RPG no PlayStation4 quando eles  recebem uma mensagem de um colega deturmainformando-os que haverá prova daqui a 2 dias. %n Eles por não estarem confiantes em seus conhecimentos, resolvem fazer um exercício de fixação.",
+      "resolutionId":1,
+      "resolutionOption":[
+         {
+            "id":0,
+            "text":"Int = 4.5"
+         },
+         {
+            "id":1,
+            "text":"double = 4.5;"
+         },
+         {
+            "id":2,
+            "text":"String = 4.5;"
+         }
+      ]
+   },
+   {
+      "id":1,
+      "text":"Em relação ao laço de repetição FOR , assinale a alternativa que compõe corretamente a sua estrutura:",
+      "narrative":"Após uma aula longa e exaustiva, Lutten e seus amigos se juntaram para fazer alguns exercícios de fixação. Eis que eles acham na internet exercícios sobre a matéria dada no dia, então resolvem fazê-la.",
+      "resolutionId":0,
+      "resolutionOption":[
+         {
+            "id":0,
+            "text":"for( int i = 0 ; i < 10 ; i++ ) { (X)"
+         },
+         {
+            "id":1,
+            "text":"for ( i < 10 ) {"
+         },
+         {
+            "id":2,
+            "text":"for ( System.out.println ( )) {"
+         }
+      ]
+   }
+]
