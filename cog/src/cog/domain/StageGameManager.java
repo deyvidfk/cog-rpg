@@ -1,8 +1,9 @@
 package cog.domain;
 
+import cog.models.AppConfigModel;
 import cog.models.QuestionModel;
+import dao.DataAccess;
 import static java.lang.System.in;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,29 +14,32 @@ import java.util.Scanner;
 // Gerenciar as vases do jogo
 public class StageGameManager {
 
-    private final List<QuestionModel> question;
-    private final Scanner console;
+    private static final Scanner console = new Scanner(in);
+    private final static List<QuestionModel> questionsSource = DataAccess.getQuestions();
+    private final AppConfigModel appConfig;
+
     private final HealthPointManager healthPointManager;
     private final int MAXIMUM_STEPS;
     private int currentStep;
 
     private QuestionModel getQuestion(int index) {
-        return question.get(index);
+        return questionsSource.get(index);
     }
 
     public StageGameManager() {
-        this.currentStep = -1;
-        question = new ArrayList<>();
-        console = new Scanner(in);
+        this.currentStep = 0;
         healthPointManager = new HealthPointManager();
-        MAXIMUM_STEPS = question.size();
+        MAXIMUM_STEPS = questionsSource.size() - 1;
+
+        appConfig = DataAccess.getGameConfig();
     }
 
     // Inicializa o jogo
     public void initGame() {
         //Introdução do Jogo
-        System.out.println("=================== Convergence Of Grades ===================");
-        System.out.format("Esse jogo nalalas blabla blabkla... %n%n%n");
+        System.out.format(appConfig.getGameName() + "%n");
+        System.out.format("Versão: " + appConfig.getGameVersion() + "%n");
+        System.out.format(appConfig.getGameHistory() + "%n");
         System.out.println("DIGITE QUALQUER COISA PARA CONTINUAR: ");
         // Aguarda até que o usuário aperte qualquer tecla do teclado para inicializa o primeiro passo.
         console.next();
@@ -46,14 +50,17 @@ public class StageGameManager {
     private void getNextStep() {
         // Obtem o desafio de acordo com o passo atual;
         QuestionModel challenge = getQuestion(currentStep);
-        System.out.println(challenge.getNarrative());
-        System.out.println(challenge.getText());
-
+        System.out.format(challenge.getNarrative());
+        System.out.println("");
+        System.out.println("");
+        System.out.format(challenge.getText());
+        System.out.println("");
+        System.out.println("");
         // Faz a listagem de opções de resposta
         for (int i = 0; i < challenge.getResolutionOption().size(); i++) {
-            System.err.println(challenge.getResolutionOption().get(i).getId() + challenge.getResolutionOption().get(i).getText());
+            System.out.format("%d - %s %n", challenge.getResolutionOption().get(i).getId(), challenge.getResolutionOption().get(i).getText());
         }
-
+        System.out.println("");
         System.out.println("DIGITE SUA RESPOTA: ");
         String respose = console.next();
 
@@ -67,7 +74,7 @@ public class StageGameManager {
             // Ganha ponto
             healthPointManager.earnPoint();
             System.out.println("Você é phoda! Prossiga assim, ceRRRto. ");
-            
+
         } else {
             // adiciona 1 ponto a nota
             healthPointManager.decreaseHealth();
@@ -80,7 +87,7 @@ public class StageGameManager {
         if (currentStep < MAXIMUM_STEPS && healthPointManager.isAlive()) {
             getNextStep();
         } else {
-            if (healthPointManager.isAlive()) {
+            if (!healthPointManager.isAlive()) {
                 System.out.println("GAME OVER!");
             } else if (healthPointManager.isApproved()) {
                 System.out.println("GANHOU VIAAAAAAAAAAAAAAADO!");
@@ -92,7 +99,7 @@ public class StageGameManager {
     }
 
     private boolean checkResponse(QuestionModel question, int response) {
-        return true;
+        return question.getResolutionId() == response;
     }
 
     // valida a entrada do usuario de acordo com os valores permitidos
