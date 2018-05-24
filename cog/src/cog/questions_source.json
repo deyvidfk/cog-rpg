@@ -1,41 +1,201 @@
 [
    {
-      "id":0,
-      "text":"Qual das alternativas a variável está escrita corretamente?",
-      "narrative":"Lutten  e seus amigos estão jogando um jogo de RPG no PlayStation4 quando eles  recebem uma mensagem de um colega deturmainformando-os que haverá prova daqui a 2 dias. %n Eles por não estarem confiantes em seus conhecimentos, resolvem fazer um exercício de fixação.",
-      "resolutionId":1,
-      "resolutionOption":[
+      "id": 0,
+      "text": "Qual das alternativas a variável está escrita corretamente?",
+      "narrative": "Lutten  e seus amigos estão jogando um jogo de RPG no PlayStation4 quando eles  recebem uma mensagem de um colega deturmainformando-os que haverá prova daqui a 2 dias. %n Eles por não estarem confiantes em seus conhecimentos, resolvem fazer um exercício de fixação.",
+      "resolutionId": 1,
+      "resolutionOption": [
          {
-            "id":0,
-            "text":"Int = 4.5"
+            "id": 0,
+            "text": "Int = 4.5"
          },
          {
-            "id":1,
-            "text":"double = 4.5;"
+            "id": 1,
+            "text": "double = 4.5;"
          },
          {
-            "id":2,
-            "text":"String = 4.5;"
+            "id": 2,
+            "text": "String = 4.5;"
          }
       ]
    },
    {
-      "id":1,
-      "text":"Em relação ao laço de repetição FOR , assinale a alternativa que compõe corretamente a sua estrutura:",
-      "narrative":"Após uma aula longa e exaustiva, Lutten e seus amigos se juntaram para fazer alguns exercícios de fixação. Eis que eles acham na internet exercícios sobre a matéria dada no dia, então resolvem fazê-la.",
-      "resolutionId":0,
-      "resolutionOption":[
+      "id": 1,
+      "text": "Em relação ao laço de repetição FOR , assinale a alternativa que compõe corretamente a sua estrutura:",
+      "narrative": "Após uma aula longa e exaustiva, Lutten e seus amigos se juntaram para fazer alguns exercícios de fixação. Eis que eles acham na internet exercícios sobre a matéria dada no dia, então resolvem fazê-la.",
+      "resolutionId": 0,
+      "resolutionOption": [
          {
-            "id":0,
-            "text":"for( int i = 0 ; i < 10 ; i++ ) { (X)"
+            "id": 0,
+            "text": "for( int i = 0 ; i < 10 ; i++ ) { (X)"
          },
          {
-            "id":1,
-            "text":"for ( i < 10 ) {"
+            "id": 1,
+            "text": "for ( i < 10 ) {"
          },
          {
-            "id":2,
-            "text":"for ( System.out.println ( )) {"
+            "id": 2,
+            "text": "for ( System.out.println ( )) {"
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "text": "Qual é a função do comando BREAK ?",
+      "narrative": "Após faltar na aula da última semana de Programação, Rotten estava com dúvidas sobre o comando break. Após seus amigos explicarem como qual era a funcionalidade do comando, Rotten resolveu testar seu conhecimento respondendo a uma pergunta:",
+      "resolutionId": 1,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "Ignorar o código"
+         },
+         {
+            "id": 1,
+            "text": "Quebrar uma estrutura"
+         },
+         {
+            "id": 2,
+            "text": "Imprimir dados"
+         }
+      ]
+   },
+   {
+      "id": 3,
+      "text": "No Java , a entrada de dados ( input ) é feita por quais classes ?",
+      "narrative": "Ao término da aula de Programação, Lutten recebeu um desafio do professor, na qual caso ele respondesse corretamente ele receberia nota. A pergunta era relacionada a aula que acabara de receber e ela a seguinte",
+      "resolutionId": 2,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "JOptionPane, Array e Scanner"
+         },
+         {
+            "id": 1,
+            "text": "Scanner, Static e BufferedReader"
+         },
+         {
+            "id": 2,
+            "text": "BufferedReader,JOptionPane e Scanner"
+         }
+      ]
+   },
+   {
+      "id": 4,
+      "text": "'É tipo de retorno do método. Este tipo de retorno significa vazio/nada, o método não dá retorno nenhum. Os métodos podem retornar qualquer tipo do seu projeto, até mesmo os criados por você'. %n Qual é o método descrito acima? ",
+      "narrative": "Após a aula de pontos de entrada, Lutten e seus amigos receberam uma atividade de fixação para fazer.",
+      "resolutionId": 1,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "Static"
+         },
+         {
+            "id": 1,
+            "text": "Void"
+         },
+         {
+            "id": 2,
+            "text": "Public"
+         }
+      ]
+   },
+   {
+      "id": 5,
+      "text": "O código a seguir pertence a qual estrutura do Java: ? %n %n case 1:%n System.out.println('Opção1');%n break;%n case 2: %n System.out.println('pção2'); %n break; %n case 3:%n System.out.println('Opção3'); %n break; %n %n",
+      "narrative": "Após a aula de pontos de entrada, Lutten e seus amigos receberam uma atividade de fixação para fazer.' %n Qual é o método descrito acima?Após o término da aula, o professor de Programação passou um ADO que deveria ser entregue até o final do dia.Hogg ,Koff e Rotten fizeram rapidamente o exercício por terem maior conhecimento na matéria , porém Lutten estava com dificuldades. Após pedir ajuda para o entendimento da matéria e com base no conhecimento adquirido, Lutten foi tentar responder a ADO.",
+      "resolutionId": 2,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "Do While"
+         },
+         {
+            "id": 1,
+            "text": "If"
+         },
+         {
+            "id": 2,
+            "text": "Switch"
+         }
+      ]
+   },
+   {
+      "id": 6,
+      "text": "O que é um Array ?",
+      "narrative": "Após um dia exaustivo no trabalho, Hogg e Lutten foram ao bar antes da aula para relaxar e aliviar o estresse. Após perderem a hora bebendo, ao chegar na aula, ambos se depararam com o professor passando uma atividade. Rapidamente eles se sentaram em suas cadeiras e tiveram que responder a seguinte pergunta:",
+      "resolutionId": 0,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "É uma estrutura de dados que armazena uma quantidade fixa de dados de um certo tipo."
+         },
+         {
+            "id": 1,
+            "text": "Consiste de uma expressão booleana seguida por uma ou mais declarações."
+         },
+         {
+            "id": 2,
+            "text": "São quebras de laços de repetição."
+         }
+      ]
+   },
+   {
+      "id": 7,
+      "text": "",
+      "narrative": "Hogg e Lutten estavam com dificuldades em alguns exercícios de Programação e por isso resolveram comprar alguns livros. Por não possuírem muito dinheiro no momento, eles resolveram criar um aplicativo que os ajudassem a saber qual critério de compra seria mais benéfico para ambos. No critério A eles pagariam 0,55 por livro mais um valor fixo de 2,50. Já no critério B eles pagariam 0,30 por livro mais um valor fixo de 7,50. Quantos livros Lutten e Hogg precisam comprar para que o critério B se torne mais benéfico do que o critério A?",
+      "resolutionId": 2,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "19 livros"
+         },
+         {
+            "id": 1,
+            "text": "20 livros"
+         },
+         {
+            "id": 2,
+            "text": "21 livros"
+         }
+      ]
+   },
+   {
+      "id": 8,
+      "text": "Assinale a alternativa correta em relação as variáveis Double e Float.",
+      "narrative": "Após um longo dia no trabalho, Lutten volta para casa e estuda para a iminente prova ao final do semestre.",
+      "resolutionId": 0,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "O Double possui mais precisão do que o Float."
+         },
+         {
+            "id": 1,
+            "text": "O Float possui mais precisão do que o Double"
+         },
+         {
+            "id": 2,
+            "text": "Eles não possuem diferença"
+         }
+      ]
+   },
+   {
+      "id": 9,
+      "text": "Crie um programa que verifica se um número inteiro informado pelo usuário é divisível por 3.%n O programa a seguir verificaria se o número inteiro informado pelo usuário seria divisível por 3 porém parte do programa foi apagado acidentalmente. %n %n  public class ADO { %n  public static void main(String[] args) { %n  Scanner console = new Scanner(in); %n System.out.println('Digite o número: '); %n int n = console.nextInt();%n  _____________________ %n System.out.println('O número ' + n + ' é divisível por 3'); %n }else{ %n System.out.println('O número ' + n + ' não é divisível por 3'); %n  } %n } %n } %n %n Qual das alternativas a seguir preenche o espaço em branco corretamente e fará com que o programa funcione?",
+      "narrative": "",
+      "resolutionId": 0,
+      "resolutionOption": [
+         {
+            "id": 0,
+            "text": "if (n % 3 == 0) {"
+         },
+         {
+            "id": 1,
+            "text": "if (n % 2 == 0) {"
+         },
+         {
+            "id": 2,
+            "text": "if (n % 3 != 0) {"
          }
       ]
    }

@@ -25,7 +25,7 @@ public class DataAccess {
         InputStream is = Start.class.getResourceAsStream("game_config.json");
         String json = convertStreamToString(is);
         Gson gson = new GsonBuilder().create();
-        Type objType1 = TypeToken.getParameterized(AppConfigModel.class).getType();
+        Type objType1 = TypeToken.getParameterized(AppConfigModel.class, AppConfigModel.ResourceMessages.class).getType();
         AppConfigModel data = gson.fromJson(json, objType1);        
         return data;
     }
